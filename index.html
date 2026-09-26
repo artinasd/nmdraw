@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070a13">
+  <title>قرعه‌کشی نورمدیا | NurMedia Draw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">N</span><div><strong>nurmedia</strong><small>قرعه‌کێشی تایبەت</small></div></div>
+      <div class="count"><b id="count">207</b><span>بەشداربوو</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">🎲 قرعه‌کێشی بە تەواوی هەڕەمەکی</div>
+      <h1>کێ برنده‌یە؟</h1>
+      <p>هەموو ناوەکان لەبەرچاوی تۆن. هیچ ناوێک لە دەرەوەی ئەم لیستە نییە.</p>
+    </section>
+
+    <section class="draw-stage" aria-label="میدانی قرعه‌کێشی">
+      <div class="stage-head">
+        <span><i></i> لیستی بەشداربووان</span>
+        <span id="status">ئامادەی قرعه‌کێشی</span>
+      </div>
+      <div id="participants" class="participants" role="list" aria-label="هەموو بەشداربووان"></div>
+      <div id="winner" class="winner" aria-live="polite">
+        <span class="winner-kicker">🏆 برنده</span>
+        <strong id="winnerName"></strong>
+        <small>پیرۆزە! قرعه‌کێشی بە سەرکەوتوویی کۆتایی هات.</small>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="drawBtn" type="button"><span>🎲</span> دەستپێکردنی قرعه‌کێشی</button>
+      <button id="resetBtn" type="button" class="secondary">↻ دووبارە ئامادەکردن</button>
+    </div>
+    <p class="fairness">🔐 هەڵبژاردن بە <b>Web Crypto API</b> وەک سەرچاوەی هەڕەمەکیی سیستەم ئەنجام دەدرێت.</p>
+    <footer>nurmedia · قرعه‌کێشی شەفاف و ڕوون</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
